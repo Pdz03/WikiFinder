@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header{
+    display:flex;
+    width:100%;
+    background-color: #301E67;
+    padding:10px 10px 10px 20px;
+    margin-bottom:10px;
+    z-index:999;
+    box-shadow: 0px 0px 7px 2px rgb(255, 255, 255);
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .clock{
+    width:20%;
+    margin:15px;
+    padding:3px;
+    display:flex;
+    flex-direction: column;
+    background-color: #553e97;
+    border-radius: 6px;
+    align-items:center;
+    color:white;
+    box-shadow: 0px 0px 7px 2px rgb(255, 255, 255);
+  }
+
+  .clock .time {
+    font-size: 45px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+   
+  .clock .date {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #03001C;
+  }
+  
+  main {
+    display:flex;
+  }
+
+  content{
+    flex:5;
+  }
+
+  aside{
+    padding:15px;
+    margin:10px;
+    width:25%;
+    height:50%;
+    display: flex;
+    position:sticky;
+    top:10px;
+    border-radius: 5px;
+    text-align: justify;
+    background-color: #5c4797;
+    box-shadow: 0 4px 8px 5px rgba(248, 215, 255, 0.61);
+    color:white;
+  }
+
+  aside > p > a{
+    color:#dacefd;
+  }
+
+  aside > p > a:hover{
+    font-weight: bold;
+  }
+
+  footer{
+    background-color: #301E67;
+    padding: 10px;
+    bottom:0px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width:100%;
+    bottom: 0px;
+ }
+
+ #btnTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: rgb(237, 100, 100);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+}
+
+#btnTop:hover {
+  background-color: #555;
+  color: white;
+}
+
+ @media screen and (max-width: 1200px) {
+  .clock .time {
+    font-size: 25px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+   
+  .clock .date {
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+
+  .clock{
+    height:100%;
+  }
+ }
